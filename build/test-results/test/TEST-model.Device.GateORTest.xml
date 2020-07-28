@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="model.Device.GateORTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-07-28T15:33:27" hostname="KaiPC-Home" time="0.002">
+  <properties/>
+  <testcase name="gateOR_get_value_with_all_input_false_test" classname="model.Device.GateORTest" time="0.001"/>
+  <testcase name="gateOR_get_value_with_different_value_input__test" classname="model.Device.GateORTest" time="0.0"/>
+  <testcase name="gateOR_get_value_with_all_input_true_test" classname="model.Device.GateORTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
