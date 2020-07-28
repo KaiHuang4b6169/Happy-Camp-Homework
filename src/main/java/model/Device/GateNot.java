@@ -10,17 +10,8 @@ public class GateNot extends Device {
     }
 
     public Vector<Boolean> getValues(){
-        Vector<Boolean> vector = new Vector();
-        Iterator iterator = iPins.iterator();
-        while(iterator.hasNext()){
-            vector.addAll(getDeviceNotValues((Device) iterator.next()));
-        }
-        return vector;
-    }
-
-    private Vector<Boolean> getDeviceNotValues(Device device){
-        return device.getValues().stream()
-                .map(Boolean -> !Boolean)
-                .collect(Collectors.toCollection(Vector::new));
+        return this.getAllIPinValues().stream()
+                                .map(Boolean -> !Boolean)
+                                .collect(Collectors.toCollection(Vector::new));
     }
 }

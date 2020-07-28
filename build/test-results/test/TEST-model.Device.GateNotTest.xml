@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="model.Device.GateNotTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-07-28T14:16:23" hostname="KaiPC-Home" time="0.002">
-  <properties/>
-  <testcase name="gateNot_get_value_with_multi_input_test" classname="model.Device.GateNotTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
