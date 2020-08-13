@@ -6,14 +6,17 @@ import java.util.Vector;
 import java.util.stream.Collectors;
 
 public abstract class Device {
+    private boolean connected;
     protected Vector<Device> iPins;
 
     public Device(){
         iPins = new Vector();
+        this.connected = true;
     }
 
     public void addInputPin(Device iPin){
         iPins.add(iPin);
+        iPin.setConnected(true);
     }
 
     public abstract Vector<Boolean> getValues();
@@ -26,5 +29,13 @@ public abstract class Device {
             vector.addAll(deviceValues);
         }
         return vector;
+    }
+
+    public boolean isConnected() {
+        return connected;
+    }
+
+    public void setConnected(boolean connected) {
+        this.connected = connected;
     }
 }
